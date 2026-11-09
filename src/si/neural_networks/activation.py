@@ -1,6 +1,6 @@
 import numpy as np
 from abc import ABCMeta, abstractmethod
-from layers import Layer
+from .layers import Layer
 
 
 
@@ -158,9 +158,6 @@ if __name__ == "__main__":
             output_error * analytic
         )
 
-    # ==========================================
-    # Softmax: estabilidade e probabilidades
-    # ==========================================
 
     softmax = SoftmaxActivation()
     softmax.set_input_shape((3,))
